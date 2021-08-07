@@ -11,12 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      // https://gawdiseattle.gitbook.io/wdi/05-node-express/express-sequelize/one-to-many
       models.permit.belongsTo(models.user)
     }
   };
   Permit.init({
-    bin__: DataTypes.NUMBER,
+    bin__: DataTypes.INTEGER,
     novdescription: DataTypes.STRING,
     filing_date: DataTypes.DATEONLY,
     owner_s_business_name: DataTypes.STRING,

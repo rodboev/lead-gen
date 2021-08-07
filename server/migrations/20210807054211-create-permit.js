@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       bin__: {
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       novdescription: {
         type: Sequelize.STRING
@@ -18,12 +18,15 @@ module.exports = {
         type: Sequelize.DATEONLY
       },
       owner_s_business_name: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       owner_s_first_name: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       owner_s_last_name: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       owner_s_house__: {
@@ -42,6 +45,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       owner_s_phone__: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {

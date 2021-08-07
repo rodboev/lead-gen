@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
   Violation.init({
     violationid: DataTypes.INTEGER,
     inspectiondate: DataTypes.DATE,
-    bin: DataTypes.NUMBER,
+    bin: DataTypes.INTEGER,
     novdescription: DataTypes.STRING,
     filing_date: DataTypes.DATEONLY,
     owner_s_business_name: DataTypes.STRING,

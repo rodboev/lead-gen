@@ -20,7 +20,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       bin: {
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       // Had commented these out but violations can be back-dated
       createdAt: {
